@@ -4,8 +4,8 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 import sys
 from PyQt5.uic import  loadUiType
-#import mysql.connector as mc
-import MySQLdb as mdb
+import mysql.connector as con
+#import MySQLdb as mdb
 
 
 ui, _ = loadUiType('EmployeeInformationSystem.ui')
@@ -34,27 +34,43 @@ class MainApp(QMainWindow, ui):
         else:
             QMessageBox.information(self,"Employee Information System","Invalid Admin login details, Try Again!")
 
-    
+    #mydb = mysql.connector.connect( host="localhost",user= "root",password= "",database= "employee information system")
+
+
     def insertData(self):
-        con = mdb.connect("localhost", "root", "", "employee information system")
+        try:
+            mydb = con.connect( host="localhost",user= "root",password= "",database= "employee information system")
+            mycursor = mydb.cursor()
 
-        with con:
-            cur = con.cursor()
+            Employee_id = self.tb11.text()
+            Name = self.tb12.text()
+            Gender= self.cb11.currentText()
+            Date_of_birth = self.tb13.text()
+            Age= self.tb14.text()
+            Address = self.tb15.text()
+            Email= self.tb16.text()
+            Phn_No= self.tb17.text()
+            Salary = self.tb18.text()
+            Role = self.cb12.currentText()
 
-            cur.execute("INSERT INTO employee(Employee_id, Name, Gender, Date_of_birth,	Age, Address, Email, Phn_No, Salary, Role)"
-                        "VALUES('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')" %(''.join(self.tb11.text()),
-                                                                                       ''.join(self.tb12.text()),
-                                                                                       ''.join(self.cb11.currentText()),
-                                                                                       ''.join(self.tb13.text()),
-                                                                                       ''.join(self.tb14.text()),
-                                                                                       ''.join(self.tb15.text()),
-                                                                                       ''.join(self.tb16.text()),
-                                                                                       ''.join(self.tb17.text()),
-                                                                                       ''.join(self.tb18.text()),
-                                                                                       ''.join(self.cb12.currentText())))
+            
+
+            
+            qry ="INSERT INTO employee(Employee_id, Name, Gender, Date_of_birth, Age, Address, Email, Phn_No, Salary, Role)VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+            value= (Employee_id, Name, Gender, Date_of_birth, Age, Address, Email, Phn_No, Salary, Role)
+            mycursor.execute(qry,value)
+            mydb.commit()
             QMessageBox.about(self,"Employee Information System","Information added Successfully!")
-            self.close()
-           
+
+        except con.Error as e:
+            print("Error",e)
+            
+
+
+
+
+        
+                   
 def main():
     app = QApplication(sys.argv)
     Window = MainApp()
