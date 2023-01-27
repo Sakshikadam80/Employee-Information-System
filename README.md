@@ -7,3 +7,4 @@ iii.	PyQt5 Module
 iv.	PyQt5 tools
 v.	XAMPP Control Panel
 vi.	phpMyAdmin server
+link to see inserted data into database: http://localhost/phpmyadmin/index.php?route=/sql&db=employee+information+system&table=employee&pos=0
