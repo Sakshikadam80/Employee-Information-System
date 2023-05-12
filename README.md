@@ -1,13 +1,22 @@
-# Simple-Employee-Information-System
+# Simple-Employee-Information-System-using-agile-Methodology
 features implemented in this project such as a login page, an add new employee section, and a delete or edit the employee section
-Requirements are as follows
-i.	Python IDLE
-ii.	Python 3.9 version
-iii.	PyQt5 Module
-iv.	PyQt5 tools
-v.	XAMPP Control Panel(while runnning the code make sure on XAMPP server, modules Apache and MySql are started)
-vi.	phpMyAdmin server
-link to see inserted data into database: http://localhost/phpmyadmin/index.php?route=/sql&db=employee+information+system&table=employee&pos=0
+# Requirements are as follows
+i.    To plan and track the project in agile Methodology TCS-Jile platform is used https://www.jile.io/ 
+ii.	  Python IDLE
+iii.	Python 3.9 version
+iv.	  PyQt5 Module
+v.	  PyQt5 tools
+vi.	  XAMPP Control Panel(while runnning the code make sure on XAMPP server, modules Apache and MySql are started)
+vii.	phpMyAdmin server
+# Setting the Vision for the project.
+![Screenshot (54)](https://github.com/Sakshikadam80/Simple-Employee-Information-System-using-Agile-Methodology/assets/91478993/00c4df81-b7e5-4035-9602-2963bfe43f69)
+# Setting the Epics for the project.
+![Screenshot (64)](https://github.com/Sakshikadam80/Simple-Employee-Information-System-using-Agile-Methodology/assets/91478993/3caa32cb-7d66-4909-920b-316f7ee6261d)
+# Setting the Stories for the project
+![Screenshot (66)](https://github.com/Sakshikadam80/Simple-Employee-Information-System-using-Agile-Methodology/assets/91478993/f9d979ae-cc2a-4a88-b9ec-20652dd19f7d)
+# Sprint planning and track progress
+![Screenshot (67)](https://github.com/Sakshikadam80/Simple-Employee-Information-System-using-Agile-Methodology/assets/91478993/4e1d5a00-a3b4-4d07-ad73-647fe63aa1a1)
+# According to above agile process a simple employee information system is designed and tracked
 # Login Page
 ![Screenshot (95)](https://github.com/Sakshikadam80/Simple-Employee-Information-System/assets/91478993/d9169728-b98d-439f-a259-9cc8fa79bfdb)
 # If the username and password are incorrect, the system will generate one message box as follows:​
