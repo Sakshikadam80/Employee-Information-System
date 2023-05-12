@@ -27,3 +27,5 @@ vii.	phpMyAdmin server
 # open this link to see creatred database structure and updated values http://localhost/phpmyadmin/index.php?route=/sql&db=employee+information+system&table=employee&pos=0
 # Database structure is as follows:
 ![Screenshot (98)](https://github.com/Sakshikadam80/Simple-Employee-Information-System/assets/91478993/c537c060-ac25-481c-9049-22bf89a0db99)
+# After inserted values into code(PyQt5) that will automatically replicated into database structure is as follows:
+![Screenshot (99)](https://github.com/Sakshikadam80/Simple-Employee-Information-System-using-Agile-Methodology/assets/91478993/15b6dfe2-5adc-400b-9c94-f34a1af8aba4)
