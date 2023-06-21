@@ -28,7 +28,7 @@ class MainApp(QMainWindow, ui):
         un=self.tb01.text()
         pw=self.tb02.text()
         if (un=='admin' and pw=='admin'):
-            self.menubar.setVisible(True)#if both  r correct im enabiling the menubar
+            self.menubar.setVisible(True)#if both are correct in enabling the menubar
             #setting
             self.tabWidget.setCurrentIndex(1)
         else:
