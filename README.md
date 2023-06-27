@@ -1,4 +1,4 @@
-# Simple-Employee-Information-System-using-agile-Methodology
+# Employee-Information-System-using-agile-Methodology
 features implemented in this project such as a login page, an add new employee section, and a delete or edit the employee section
 # Requirements are as follows
 i.    To plan and track the project in agile Methodology TCS-Jile platform is used https://www.jile.io/ 
